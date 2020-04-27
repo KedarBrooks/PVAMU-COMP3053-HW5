@@ -18,7 +18,7 @@ int main()
     cout << "Before the heap construction:" << endl;
     // This is a complete binary tree
     h.print();
-    /*
+    
     // Perform downheap() to create a heap
     h.construct();
     // This is a heap now
@@ -31,8 +31,9 @@ int main()
     h.insert(10);
     h.print();
     
+    cout << "Sorted Heap: " << endl; 
     h.heapsort();
     h.print();  // I should see a sorted list now
-    */
+
     return 0;
 }

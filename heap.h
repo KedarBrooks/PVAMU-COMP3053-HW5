@@ -17,15 +17,12 @@ class heap
 private:
     int size; 
     vector<int> A;      // heap data: int A[];
-    struct tData {
-      int P; 
-      int L[20]; 
-      int R[20]; 
-    }; 
     
 public:
     heap(int list[], int N); // construct a heap
     int PARENT(int i);   // parent index = child indx / 2
+    int LEFT();          // Before Construction: Returns index Start
+    int RIGHT();         // Before Construction: Returns index End
     int LEFT(int i);     // left index = parent index * 2
     int RIGHT(int i);    // right index = (parent index * 2) + 1
     
